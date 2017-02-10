@@ -39,7 +39,7 @@ var articles = {
         content: `<p>
                     This is content for Article-Three. 
                 </p>`
-    },
+    }
 };
 
 function  createTemplate(data) {
