@@ -9,8 +9,7 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-var articles = {
-    'article-one': {
+var article-one = {
         title: 'Article One | Agasya Rani',
         heading: 'Article One',
         date: 'Feb 10, 2016',
@@ -23,23 +22,6 @@ var articles = {
                 <p>
                     This is content for Article-one. This is content for Article-one. This is content for Article-one. This is content for Article-one. This is content for Article-one. This is content for Article-one. This is content for Article-one. This is content for Article-one. This is content for Article-one. This is content for Article-one. This is content for Article-one. 
                 </p>`
-    },
-    'article-two': {
-        title: 'Article Two | Agasya Rani',
-        heading: 'Article Two',
-        date: 'Feb 10, 2016',
-        content: `<p>
-                    This is content for Article-Two. 
-                </p>`
-    },
-    'article-three': {
-        title: 'Article Three | Agasya Rani',
-        heading: 'Article Three',
-        date: 'Feb 10, 2016',
-        content: `<p>
-                    This is content for Article-Three. 
-                </p>`
-    }
 };
 
 function  createTemplate(data) {
@@ -64,7 +46,7 @@ function  createTemplate(data) {
 
 app.get('/:articleName', function (req, res) {
     var articleName = req.params.articleName;
-    res.send(createTemplate(articles[articleName]));
+    res.send(createTemplate(article-one);
 });
 
 app.get('/ui/style.css', function (req, res) {
